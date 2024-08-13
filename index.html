@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <section class="encabezado__contenedor">
+            <div class="encabezado__contenedor--informacion">
+                <img class="logo" src="./imagenes/Logo.png" alt="Logo Alura">
+                <h1 class="encabezado__contenedor--titulo">Encriptador de Texto</h1>
+            </div>
+        </section>
+    </header>
+    <main class="contenido__general">
+        <section class="contenido__general--contenedor">
+            <div class="contenido__inputYoutput">
+                <div class="contenido__input">
+                    <textarea cols="30" rows="10" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+                    <figure class="informacion__input">
+                        <img src="./imagenes/Frame 6.png" alt="Logo de Alura" class="informacion__imagen">
+                        <figC class="informacion__imagen--descripcion">Solo letras minúsculas y sin acentos</figC>
+                    </figure>
+                </div>
+                <div class="contenido__output">
+                    <div class="contenido__general--output">
+                        <div class="contenido__mensaje">
+                            <textarea class="mensaje__desencriptado" cols="20" rows="10"></textarea>
+                        </div>
+                        <div id="contenido__mensaje--informacion">
+                            <img src="./imagenes/muneco.png" alt="muñeco" class="imagen__mensaje">
+                            <p class="mensaje1">Ningún mensaje fue encontrado</p>
+                            <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenido__botones">
+            <div class="contenido__botones--contenedor">
+                <div class="contenido__botones--contenido1">
+                    <button class="boton__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="boton__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+                <div class="contenido__botones--contenido2">
+                    <button class="boton__copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie__pagina">
+        <div class="pie__pagina--contenedor">
+            <div class="pie__pagina--derechos">
+                <img class="pie__pagina--logo" src="./imagenes/Logo-1.png" alt="Logo de Alura">
+                <p class="pie__pagina--descripcion">&copy 2023 Todos los derechos reservados.<br/>Diseñado por Ramos Mauricio para Challenge Alura LATAM.</p>
+            </div>
+            <div class="pie__pagina--redes">
+            </div>
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
